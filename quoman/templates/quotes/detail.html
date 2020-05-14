@@ -269,6 +269,11 @@
           $('.btn-send-mail').click(function (ev) {
               ev.preventDefault();
 
+              swal.setDefaults({
+                  confirmButtonText: "Confirmar",
+                  cancelButtonText: "Cancelar"
+              });
+
               swal({
                       title: 'Envío de la cotización',
                       text: 'Confirme el envío por correo.',
